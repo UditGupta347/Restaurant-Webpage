@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Haveli - Restaurant Menu</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #fd7b01f8;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            padding: 15px 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        /* Main Section */
+        .menu-section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .menu-section h2 {
+            margin-bottom: 30px;
+            color: #8B0000;
+        }
+
+        .menu-items {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin-bottom: 30px;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .menu-item h3 {
+            margin-top: 15px;
+            color: #8B0000;
+        }
+
+        .menu-item p {
+            margin: 10px 0;
+        }
+
+        .menu-item .price {
+            font-weight: bold;
+            color: #333;
+        }
+
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <header>
+        <h1>Haveli</h1>
+        <p>Your favorite place for mouth-watering meals!</p>
+    </header>
+
+    
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#specials">Specials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="https://imgs.search.brave.com/KJXgDeliki5L7YnYt7BoAgXwe9yuVhnil3-OqFUvPCA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3VybGF0YWJs/ZS5jb20vbS82MTg1/NTQwY2I0ZGE5ZTI2/LzcyX2RwaV93ZWJw/LXNsdF9SRUMtMjgz/MTE0XzEzNTY1Njdf/bWFyZ2FyaXRhX3Bp/enphLmpwZw" alt="Pizza">
+                <h3>Classic Margherita Pizza</h3>
+                <p>A delicious pizza topped with fresh mozzarella, basil, and tomatoes.</p>
+                <p class="price">$12.99</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://imgs.search.brave.com/2v2Xtn1Pq1UgacLbyKWY25XHfe9JW2ER7-VKbAxhO4Q/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwMS5ueXQuY29t/L2ltYWdlcy8yMDIx/LzAyLzE0L2Rpbmlu/Zy9jYXJib25hcmEt/aG9yaXpvbnRhbC9j/YXJib25hcmEtaG9y/aXpvbnRhbC1hcnRp/Y2xlTGFyZ2UtdjIu/anBnP3dpZHRoPTEy/ODAmcXVhbGl0eT03/NSZhdXRvPXdlYnA" alt="Pasta">
+                <h3>Spaghetti Carbonara</h3>
+                <p>Traditional Italian pasta with eggs, cheese, pancetta, and pepper.</p>
+                <p class="price">$15.99</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://imgs.search.brave.com/mr9QJ8DPWyJdJdNEMdIKT1vqDqvmp5mRFmMFd4OBF7c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMz/Nzc5OTAxNS9waG90/by9jYWVzYXItc2Fs/YWQuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPWVuc3JpWWdS/SjlTSmN0TXUza2w3/cktuMVJQRUVCaWti/a21uQXkwSmZiU2c9" alt="Salad">
+                <h3>Caesar Salad</h3>
+                <p>Fresh romaine lettuce with parmesan, croutons, and creamy Caesar dressing.</p>
+                <p class="price">$9.99</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="specials" class="menu-section">
+        <h2>Today's Specials</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="https://imgs.search.brave.com/MoJppywvp2RypbvX_JiLB9Jdp-yfqGh0ffDA2uWQneo/rs:fit:500:0:0:0/g:ce/aHR0cDovL2hlYmJh/cnNraXRjaGVuLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAx/Ny8wOC9jaGlsbGkt/cGFuZWVyLWdyYXZ5/LXJlY2lwZS1lYXN5/LXBhbmVlci1jaGls/bGktd2l0aC1ncmF2/eS1yZWNpcGUtMi03/Njl4MTAyNC5qcGVn">
+                <h3>Chilli Paneer</h3>
+                <p>Chilli Paneer is a popular Indo-Chinese dish that combines the creamy, tender texture of paneer (Indian cheese) with a spicy, savory, and slightly sweet sauce.</p>
+                <p class="price">$19.99</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://imgs.search.brave.com/HcKb9RlmN1AtGayo1_Tz6TWncnEJUuZQrrdQHosdOV4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90aGVy/ZWNpcGVjcml0aWMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIxLzExL2ZydWl0/Y2FrZS02Njd4MTAw/MC5qcGc">
+                <h3>Fruit Cake</h3>
+                <p>Fruitcake is a type of dense and sweet dessert.</p>
+                <p class="price">$29.99</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="menu-section">
+        <h2>Contact Us</h2>
+        <p>123 Food Street, Flavor Town</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: contact@haveli.com</p>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Haveli. All rights reserved.</p>
+        <p><a href="#">Back to Top</a></p>
+    </footer>
+
+</body>
+</html>
