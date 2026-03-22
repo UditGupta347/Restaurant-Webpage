@@ -1,8 +1,7 @@
 ```mermaid
 graph LR
-    A[User] -->|Request|> B[Client-Side]
-    B -->|Render|> C[HTML]
-    C -->|Style|> D[CSS]
-    D -->|Script|> E[JavaScript]
-    E -->|Interact|> F[User]
+  A[Client] -->|Request|> B[Server]
+  B -->|Response|> A
+  B -->|Database Query|> C[Database]
+  C -->|Query Result|> B
 ```
